@@ -1,7 +1,8 @@
 {
   "name": "@spir1l/auditor",
   "version": "0.9.1",
-  "main": "src/index.ts",
+  "main": "dist/drift-auditor.js",
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "@spir1l/math": "workspace:*"
