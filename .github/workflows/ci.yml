@@ -11,7 +11,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with: { version: 9 }
       - run: pnpm i
-      - run: pnpm -r build         # <-- build before test!
+      - run: pnpm -r build # <-- build before test!
       #- run: pnpm -r test
       - run: echo "Install complete"
       - run: pnpm -r test

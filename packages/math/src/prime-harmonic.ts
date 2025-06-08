@@ -1,4 +1,4 @@
-import { OMEGA_1 } from './constants';
+import { OMEGA_1 } from "./constants";
 
 /**
  * Harmonic sum of reciprocals of primes ≤ n.
@@ -13,5 +13,5 @@ export function primeHarmonicSum(n: number): number {
       for (let k = p * 2; k <= n; k += p) sieve[k] = 1;
     }
   }
-  return sum + OMEGA_1;     // ω₁ bias for stability
+  return sum + OMEGA_1; // ω₁ bias for stability
 }

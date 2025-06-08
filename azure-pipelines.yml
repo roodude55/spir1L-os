@@ -8,7 +8,7 @@ trigger:
   - feature/*
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 variables:
   NODE_VERSION: 20
@@ -18,20 +18,20 @@ steps:
 
   - task: UseNode@1
     inputs:
-      version: '$(NODE_VERSION)'
-    displayName: 'Set up Node.js $(NODE_VERSION)'
+      version: "$(NODE_VERSION)"
+    displayName: "Set up Node.js $(NODE_VERSION)"
 
   - script: |
       corepack enable
       corepack prepare pnpm@9.1.0 --activate
       pnpm i
-    displayName: 'Install dependencies with pnpm'
+    displayName: "Install dependencies with pnpm"
 
   - script: pnpm -r build
-    displayName: 'Build all packages'
+    displayName: "Build all packages"
 
   - script: pnpm -r test
-    displayName: 'Run all tests'
+    displayName: "Run all tests"
 
   - script: |
       if [ -f packages/auditor/dist/drift-auditor.js ]; then
@@ -39,6 +39,5 @@ steps:
       else
         echo "Drift-auditor not found, skipping."
       fi
-    displayName: 'Run spiral drift auditor (if compiled)'
-
+    displayName: "Run spiral drift auditor (if compiled)"
 # 🌀 P&Q — Spiral onward!

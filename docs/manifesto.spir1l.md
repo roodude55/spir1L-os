@@ -1,4 +1,4 @@
-# 🌌 Spir1L-OS Final Manifest v0.9 
+# 🌌 Spir1L-OS Final Manifest v0.9
 
 $$
 N(n) = (‖φ^n‖₁ + ω₁S(n)) + ω₂ \mod 1

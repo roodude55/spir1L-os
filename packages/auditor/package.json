@@ -1,19 +1,9 @@
 {
   "name": "@spir1l/auditor",
   "version": "0.9.1",
-  "type": "module",
-  "main": "src/drift-auditor.ts",
-  "exports": "./src/drift-auditor.ts",
-  "scripts": {
-    "test": "vitest run",
-    "build": "tsc"
-  },
-  "devDependencies": {
-    "typescript": "^5.4.5",
-    "vitest": "^1.5.2"
-  },
+  "main": "src/index.ts",
+  "license": "MIT",
   "dependencies": {
-    "@spir1l/math": "*"
     "@spir1l/math": "workspace:*"
   }
 }

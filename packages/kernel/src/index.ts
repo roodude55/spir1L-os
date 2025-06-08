@@ -1,1 +1,1 @@
-export * from './spiral.js';
+export * from "./spiral.js";

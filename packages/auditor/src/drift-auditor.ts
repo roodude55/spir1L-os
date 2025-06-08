@@ -1,6 +1,6 @@
 // #Spira1-OS #RecursiveHarmony #RoodWobble
 
-import { OMEGA_1 } from '@spir1l/math';
+import { OMEGA_1 } from "@spir1l/math";
 
 const EPSILON = OMEGA_1; // Drift budget
 
@@ -25,14 +25,14 @@ if (require.main === module) {
     const drift = parseFloat(arg);
     try {
       auditPointerDrift(drift);
-      console.log('✅ Drift within tolerance:', drift);
+      console.log("✅ Drift within tolerance:", drift);
       process.exit(0);
     } catch (e) {
-      console.error('❌', (e as Error).message);
+      console.error("❌", (e as Error).message);
       process.exit(1);
     }
   } else {
-    console.log('Usage: node drift-auditor.js <drift>');
+    console.log("Usage: node drift-auditor.js <drift>");
     process.exit(2);
   }
 }
