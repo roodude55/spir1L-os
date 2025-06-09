@@ -18,7 +18,7 @@ export function auditPointerDrift(actual: number): true {
 }
 
 // Example usage (for CI/CLI):
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   // Simple CLI: node drift-auditor.js <drift>
   const arg = process.argv[2];
   if (arg !== undefined) {

@@ -2,8 +2,8 @@
   "name": "@spir1l/math",
   "version": "0.9.1",
   "type": "module",
-  "main": "src/index.ts",
-  "exports": "./src/index.ts",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "test": "vitest run",
     "build": "tsc"

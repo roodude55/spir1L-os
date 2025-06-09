@@ -1,4 +1,4 @@
-import { OMEGA_1 } from "./constants";
+import { OMEGA_1 } from "./constants.js";
 
 /**
  * Harmonic sum of reciprocals of primes ≤ n.

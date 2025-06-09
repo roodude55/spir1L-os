@@ -1,5 +1,5 @@
-import { PHI, OMEGA_1, OMEGA_2 } from "./constants";
-import { primeHarmonicSum } from "./prime-harmonic";
+import { PHI, OMEGA_1, OMEGA_2 } from "./constants.js";
+import { primeHarmonicSum } from "./prime-harmonic.js";
 
 /** Ni1KQuation → identity value in [0, 1) */
 export function ni1k(n: number): number {

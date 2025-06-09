@@ -6,5 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "@spir1l/math": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc"
   }
 }
