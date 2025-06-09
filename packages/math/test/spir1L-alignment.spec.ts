@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { spir1LAlignment } from '../src/spir1L-alignment';
 
 describe('Spir1L Alignment (TPSA)', () => {

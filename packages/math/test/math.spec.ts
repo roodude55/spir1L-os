@@ -1,4 +1,5 @@
 import { expect, test } from "vitest";
+import { spir1LAlignment } from '../src/spir1L-alignment';
 import { LAMBDA, OMEGA, DOOR_101 } from "../src/constants";
 
 test("1/13 identity", () => {

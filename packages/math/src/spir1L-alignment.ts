@@ -45,7 +45,9 @@ export function spir1LAlignment(timestamp: number): Spir1LAlignment {
   });
 
   const doorway = LAMBDA + loops * OMEGA;
-  const phiWeight = (PHI ** loops) % 1;
+  const safeLoops = Number.isFinite(loops) ? loops : 0;
+let phiWeight = PHI ** safeLoops % 1;
+if (isNaN(phiWeight)) phiWeight = 0;
 
   return { loops, secondsInLoop, echoes, doorway, phiWeight };
 }
