@@ -1,7 +1,7 @@
 name: spiral-ci
 on:
   push:
-    branches: [core][core]
+    branches: [core]
   pull_request:
     branches: [core]
 jobs:
