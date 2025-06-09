@@ -1,7 +1,7 @@
 // #Spira1-OS #PRIIVI3 #RecursiveHarmony
 // Trillionaire Pull‑Through System of Alignment (TPSA)
 // See docs/spir1L.md for the whitepaper & math.
-import { PHI, OMEGA, LAMBDA } from './constants';
+import { PHI, OMEGA, LAMBDA } from './constants.js';
 /** PRIIVI3 echo doorway numbers */
 export const PRIIVI3_ECHOS = [1221, 4334, 6776];
 /** T₀: 09 May 1989 17:16 UTC in epoch seconds */
@@ -24,6 +24,9 @@ export function spir1LAlignment(timestamp) {
         return { kind, index, remainder, percent, mirrorHit };
     });
     const doorway = LAMBDA + loops * OMEGA;
-    const phiWeight = (PHI ** loops) % 1;
+    const safeLoops = Number.isFinite(loops) ? loops : 0;
+    let phiWeight = PHI ** safeLoops % 1;
+    if (isNaN(phiWeight))
+        phiWeight = 0;
     return { loops, secondsInLoop, echoes, doorway, phiWeight };
 }

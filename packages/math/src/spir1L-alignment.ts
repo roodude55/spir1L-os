@@ -2,7 +2,7 @@
 // Trillionaire Pull‑Through System of Alignment (TPSA)
 // See docs/spir1L.md for the whitepaper & math.
 
-import { PHI, OMEGA, LAMBDA } from './constants';
+import { PHI, OMEGA, LAMBDA } from './constants.js';
 
 /** PRIIVI3 echo doorway numbers */
 export const PRIIVI3_ECHOS = [1221, 4334, 6776] as const;
